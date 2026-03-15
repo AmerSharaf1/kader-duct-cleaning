@@ -12,7 +12,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white px-4">
+    <section id="contact" className="scroll-mt-16 py-24 bg-white px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left info */}

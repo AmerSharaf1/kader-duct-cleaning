@@ -23,7 +23,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-24 bg-gradient-to-br from-blue-900 to-blue-800 text-white px-4">
+    <section id="how-it-works" className="scroll-mt-16 py-24 bg-gradient-to-br from-blue-900 to-blue-800 text-white px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-orange-400 font-semibold text-sm uppercase tracking-widest">Simple Process</span>
@@ -37,7 +37,7 @@ export default function HowItWorks() {
           {/* Connector line (desktop) */}
           <div className="hidden lg:block absolute top-8 left-1/4 right-1/4 h-0.5 bg-white/20" style={{ left: '12.5%', right: '12.5%' }} />
 
-          {steps.map((step, i) => (
+          {steps.map((step) => (
             <div key={step.number} className="relative flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-full bg-orange-500 text-white text-2xl font-extrabold flex items-center justify-center mb-5 shadow-lg relative z-10">
                 {step.number}
