@@ -60,9 +60,9 @@ export default function WhyUs() {
     <section id="why-us" className="scroll-mt-16 py-24 bg-white px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-orange-500 font-semibold text-sm uppercase tracking-widest">Why Choose Us</span>
-          <h2 className="text-4xl font-extrabold text-gray-900 mt-3 mb-4">The Kader Difference</h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+          <span className="text-emerald-600 font-semibold text-sm uppercase tracking-widest">Why Choose Us</span>
+          <h2 className="text-4xl font-extrabold text-slate-900 mt-3 mb-4">The Kader Difference</h2>
+          <p className="text-slate-500 text-lg max-w-2xl mx-auto">
             We don&apos;t just clean — we care. Here&apos;s what sets us apart from the competition.
           </p>
         </div>
@@ -71,14 +71,14 @@ export default function WhyUs() {
           {reasons.map((reason) => (
             <div
               key={reason.title}
-              className="flex gap-4 p-6 rounded-2xl border border-gray-100 hover:border-blue-200 hover:bg-blue-50/30 transition-all"
+              className="flex gap-4 p-6 rounded-2xl border border-slate-100 hover:border-emerald-200 hover:bg-emerald-50/40 transition-all"
             >
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center">
                 {reason.icon}
               </div>
               <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-1">{reason.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{reason.description}</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-1">{reason.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{reason.description}</p>
               </div>
             </div>
           ))}

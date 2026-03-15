@@ -23,27 +23,24 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="scroll-mt-16 py-24 bg-gradient-to-br from-blue-900 to-blue-800 text-white px-4">
+    <section id="how-it-works" className="scroll-mt-16 py-24 bg-slate-900 text-white px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-orange-400 font-semibold text-sm uppercase tracking-widest">Simple Process</span>
+          <span className="text-emerald-400 font-semibold text-sm uppercase tracking-widest">Simple Process</span>
           <h2 className="text-4xl font-extrabold mt-3 mb-4">How It Works</h2>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Getting your ducts cleaned has never been easier. Four simple steps to a cleaner, healthier home.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-          {/* Connector line (desktop) */}
-          <div className="hidden lg:block absolute top-8 left-1/4 right-1/4 h-0.5 bg-white/20" style={{ left: '12.5%', right: '12.5%' }} />
-
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step) => (
-            <div key={step.number} className="relative flex flex-col items-center text-center">
-              <div className="w-16 h-16 rounded-full bg-orange-500 text-white text-2xl font-extrabold flex items-center justify-center mb-5 shadow-lg relative z-10">
+            <div key={step.number} className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/40 hover:bg-emerald-900/20 transition-all">
+              <div className="w-16 h-16 rounded-full bg-emerald-600 text-white text-2xl font-extrabold flex items-center justify-center mb-5 shadow-lg">
                 {step.number}
               </div>
               <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-blue-200 text-sm leading-relaxed">{step.description}</p>
+              <p className="text-slate-400 text-sm leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
@@ -51,7 +48,7 @@ export default function HowItWorks() {
         <div className="text-center mt-14">
           <a
             href="#contact"
-            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+            className="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
           >
             Book Your Cleaning Today
           </a>

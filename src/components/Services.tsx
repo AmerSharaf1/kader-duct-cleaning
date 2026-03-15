@@ -40,13 +40,13 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="scroll-mt-16 py-24 bg-gray-50 px-4">
+    <section id="services" className="scroll-mt-16 py-24 bg-slate-50 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-orange-500 font-semibold text-sm uppercase tracking-widest">What We Offer</span>
-          <h2 className="text-4xl font-extrabold text-gray-900 mt-3 mb-4">Our Services</h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+          <span className="text-emerald-600 font-semibold text-sm uppercase tracking-widest">What We Offer</span>
+          <h2 className="text-4xl font-extrabold text-slate-900 mt-3 mb-4">Our Services</h2>
+          <p className="text-slate-500 text-lg max-w-2xl mx-auto">
             From air ducts to dryer vents, we handle it all with expert care and the latest equipment.
           </p>
         </div>
@@ -56,15 +56,15 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-white rounded-3xl shadow-sm hover:shadow-xl transition-shadow border border-gray-100 p-8 flex flex-col"
+              className="bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-slate-100 p-8 flex flex-col"
             >
-              <div className="text-blue-700 mb-5">{service.icon}</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
-              <p className="text-gray-500 mb-6 flex-1">{service.description}</p>
+              <div className="text-emerald-600 mb-5">{service.icon}</div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">{service.title}</h3>
+              <p className="text-slate-500 mb-6 flex-1">{service.description}</p>
               <ul className="space-y-2 mb-6">
                 {service.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-gray-600 text-sm">
-                    <svg className="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <li key={f} className="flex items-center gap-2 text-slate-600 text-sm">
+                    <svg className="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     {f}
@@ -72,10 +72,10 @@ export default function Services() {
                 ))}
               </ul>
               <div className="flex items-center justify-between">
-                <span className="text-blue-700 font-bold text-lg">{service.price}</span>
+                <span className="text-emerald-700 font-bold text-lg">{service.price}</span>
                 <a
                   href="#contact"
-                  className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2 rounded-full text-sm transition-colors"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2 rounded-full text-sm transition-colors"
                 >
                   Book Now
                 </a>
