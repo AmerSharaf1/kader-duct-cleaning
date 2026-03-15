@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kader Duct Cleaning — Business Website
 
-## Getting Started
+Professional air duct and dryer vent cleaning business website built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## Live Site
+
+**Production URL:** https://kaderductcleaning.vercel.app
+
+## Accounts & Access
+
+| Service | Account | Link |
+|---------|---------|------|
+| GitHub | AmerSharaf1 | https://github.com/AmerSharaf1/kader-duct-cleaning |
+| Vercel | ameersharaf10-3039 | https://vercel.com/ameers-projects-0cfdc20b/kader_duct_cleaning |
+
+## Auto-Deploy Setup
+
+Every push to the `master` branch on GitHub automatically redeploys the live site on Vercel.
+
+To enable this (one-time, if not already done):
+1. Go to Vercel dashboard → project `kader_duct_cleaning` → **Settings** → **Git**
+2. Click **Connect Git Repository** → GitHub → select `AmerSharaf1/kader-duct-cleaning`
+
+## Making Changes & Deploying
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Make your edits to any file
+
+# 2. Stage and commit
+git add .
+git commit -m "describe your change"
+
+# 3. Push to GitHub — Vercel auto-deploys from here
+git push
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open http://localhost:3000 to view the site.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/
+    layout.tsx        # Root layout & metadata (SEO title, description)
+    page.tsx          # Main page — imports all sections
+    globals.css       # Global styles
+  components/
+    Navbar.tsx        # Fixed top nav with mobile hamburger menu
+    Hero.tsx          # Hero section with headline, CTA, stats
+    Services.tsx      # 3 service cards (Air Duct, Dryer Vent, HVAC)
+    WhyUs.tsx         # 6 reasons to choose Kader Duct
+    HowItWorks.tsx    # 4-step process section
+    Testimonials.tsx  # 3 customer reviews
+    Contact.tsx       # Quote request form
+    Footer.tsx        # Footer with links, contact info, social icons
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Services Offered
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Air Duct Cleaning** — Starting at $199
+- **Dryer Vent Cleaning** — Starting at $99
+- **HVAC Inspection & Sanitization** — Starting at $149
 
-## Deploy on Vercel
+## Contact Info on Site
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Phone: (647) 123-4567
+- Email: info@kaderduct.com
+- Hours: Mon–Sat 7am–8pm | Sun 9am–5pm
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Update the phone, email, and hours in `src/components/Contact.tsx` and `src/components/Footer.tsx`.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS v4
+- **Language:** TypeScript
+- **Deployment:** Vercel
+- **Repo:** GitHub
